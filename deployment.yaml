@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: machine-learning
+  template:
+    metadata:
+      labels:
+        app: machine-learning
+    spec:
+      imagePullSecrets:
+        - name: docker-cred
+      containers:
+        - name: myapp
+          image: daphdocker/udacity-flaskapp
+          ports:
+            - containerPort: 80
+    
