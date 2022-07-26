@@ -2,6 +2,8 @@
 This project focuses on deploying a machine learning application written in flask.
 The application serves out predictions (inference) about housing prices through API calls.
 
+[![DaphneyI](https://circleci.com/gh/daphneyi/udacity-project4.svg?style=svg)](https://circleci.com/gh/daphneyi/udacity-project4)
+
 ## Requirements
 To run this project you need to have the following installed
 - python3.7 
